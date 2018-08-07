@@ -35,11 +35,6 @@ namespace CorcoranTest.WepApi
                     Title = "Corcoran Test",
                     Description = "Leandro's Corcoran Test",
                 });
-
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-
-                c.IncludeXmlComments(xmlPath);
             });
         }
 
